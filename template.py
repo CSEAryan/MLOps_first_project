@@ -6,20 +6,21 @@ from pathlib import Path  #we can create system compatible path
 list_of_files =[
 
 
-    ".github/workflows/.gitkeep",
+    ".github/workflows/.gitkeep", #for deployment and continuous integration
     "src/__init__.py", #source code file
     "src/components/__init__.py",  #all the stages
-    "src/components/data_ingestion.py",
+    #src is representing all sorce code
+    "src/components/data_ingestion.py", 
     "src/components/data_transformation.py",
     "src/components/model_trainer.py",
     "src/components/model_evaluation.py",
     "src/pipeline/__init__.py",
     "src/pipeline/training_pipeline.py",
     "src/pipeline/prediction_pipeline.py",
-    "src/utils/__init__.py",
+    "src/utils/__init__.py", # all the utility method
     "src/utils/utils.py",
-    "src/logger/logging.py",
-    "src/exception/exception"
+    "src/logger/logging.py", # for logging
+    "src/exception/exception.py",
     "tests/unit/__init__.py",  #for unit testing
     "tests/integration/__init__.py", #for integration testing
     "init_setup.sh",
@@ -28,8 +29,8 @@ list_of_files =[
     "setup.py",
     "setup.cfg",
     "pyproject.toml",
-    "tox.ini",
-    "experiment/experiments.ipynb",
+    "tox.ini", # we can test our project locally
+    "experiment/experiments.ipynb", 
 
 
 ]
